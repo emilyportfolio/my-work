@@ -1,0 +1,431 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.3)),
+    url(/image/image\ copy\ 3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home h1 {
+  font-size: 10rem;
+  color: hsl(210, 96%, 73%);
+}
+.home h3 {
+  font-size: 4rem;
+  color: hsl(210, 96%, 73%);
+}
+.home p {
+  font-size: 1.5rem;
+  color: white;
+}
+.home h2 {
+  font-size: 2rem;
+  color: white;
+}
+.home-btn {
+  margin-top: 0.5rem;
+}
+.home-btn button {
+  height: 3.5rem;
+  width: 8rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px blue;
+  background-color: hsl(210, 96%, 73%);
+  font-size: 1rem;
+}
+.home-btn button:hover{
+  height: 4rem;
+  background-color: rgb(108, 108, 247);
+  color: white;
+  box-shadow: 0 0 10px blueviolet;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 90%;
+  background-color: rgb(89, 125, 158);
+  position: fixed;
+  top: 0;
+  left: 5%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+.about div:first-child {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.about div:first-child i {
+  font-size: 2rem;
+}
+
+.about div:first-child h3 {
+  font-size: 2rem;
+}
+
+.about div:last-child button {
+  background-color: blue;
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.about div:last-child button a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-size: 1rem;
+}
+.about div:last-child button:hover {
+  background-color: rgb(8, 8, 109);
+}
+.about div:last-child button a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.text {
+  margin-top: 7rem;
+  text-align: center;
+}
+.text h4 {
+  font-size: 2rem;
+  color: rgb(231, 229, 229);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.setbox div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.set {
+  display: flex;
+  background-color: rgb(89, 125, 158);
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: 13rem;
+  object-fit: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.set img {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px;
+}
+.set img:hover {
+  box-shadow: 0 0 13px rgb(17, 0, 255);
+  height: 12rem;
+  width: 12rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image:
+      linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.7)),
+      url(/image/image\ copy\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home .home-txt h1 {
+    font-size: 5.5rem;
+    color: hsl(210, 96%, 73%);
+  }
+  .home .home-txt h3 {
+    font-size: 2.3rem;
+    color: hsl(210, 96%, 73%);
+  }
+  .home .home-txt p {
+    font-size: 1.3rem;
+  }
+  .home .home-txt h2 {
+    font-size: 2rem;
+  }
+  .home-btn {
+    margin-top: 0.5rem;
+  }
+  .home-btn button {
+    height: 3.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue;
+    background-color: hsl(210, 96%, 73%);
+    font-size: 1rem;
+  }
+  .home-btn button:hover{
+  height: 4rem;
+  background-color: rgb(108, 108, 247);
+  color: white;
+  box-shadow: 0 0 10px blueviolet;
+}
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+    background-color: rgb(89, 125, 158);
+    position: fixed;
+    top: 0;
+    left: 5%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    z-index: 10;
+  }
+
+  .about div:first-child {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .about div:first-child i {
+    font-size: 2rem;
+  }
+
+  .about div:first-child h3 {
+    font-size: 2rem;
+  }
+
+  .about div:last-child button {
+    background-color: blue;
+    height: 2.5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+  .about div:last-child button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  .about div:last-child button:hover {
+    background-color: rgb(8, 8, 109);
+  }
+  .about div:last-child button a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  .text {
+    margin-top: 7rem;
+    text-align: center;
+  }
+  .text h4 {
+    font-size: 2rem;
+    color: rgb(231, 229, 229);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .setbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .set {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(89, 125, 158);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 40rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .setbox div {
+    display: flex;
+    flex-direction: column;
+  }
+  .set img {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+  }
+  .set img:hover {
+    box-shadow: 0 0 13px blue;
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-image:
+      linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.7)),
+      url(/image/image\ copy\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+  }
+  .home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home h1 {
+    font-size: 10rem;
+    color: hsl(210, 96%, 73%);
+  }
+  .home h3 {
+    font-size: 4rem;
+    color: hsl(210, 96%, 73%);
+  }
+  .home p {
+    font-size: 1.5rem;
+  }
+  .home h2 {
+    font-size: 2rem;
+  }
+  .home-btn {
+    margin-top: 0.5rem;
+  }
+  .home-btn button {
+    height: 3.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue;
+    background-color: hsl(210, 96%, 73%);
+    font-size: 1rem;
+  }
+  .home-btn button:hover{
+  height: 4rem;
+  background-color: rgb(108, 108, 247);
+  color: white;
+  box-shadow: 0 0 10px blueviolet;
+}
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+    background-color: rgb(89, 125, 158);
+    position: fixed;
+    top: 0;
+    left: 5%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    z-index: 10;
+  }
+
+  .about div:first-child {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .about div:first-child i {
+    font-size: 2rem;
+  }
+
+  .about div:first-child h3 {
+    font-size: 2rem;
+  }
+
+  .about div:last-child button {
+    background-color: blue;
+    height: 2.5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+  .about div:last-child button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  .about div:last-child button:hover {
+    background-color: rgb(8, 8, 109);
+  }
+  .about div:last-child button a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  .text {
+    margin-top: 7rem;
+    text-align: center;
+  }
+  .text h4 {
+    font-size: 2rem;
+    color: rgb(231, 229, 229);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .setbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .set {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(89, 125, 158);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    min-height: 13rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .set img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+  }
+  .set img:hover {
+    box-shadow: 0 0 13px blue;
+    height: 12rem;
+    width: 12rem;
+  }
+}
